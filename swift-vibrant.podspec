@@ -28,15 +28,14 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'swiftVibrant/**/*'
+  s.source_files = 'Sources/swiftVibrant/**/*'
   
   s.swift_version = '5.0'
   
   # s.resource_bundles = {
-  #   'swiftVibrant' => ['swiftVibrant/Assets/*.png']
+  #   'swiftVibrant' => ['Sources/swiftVibrant/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.frameworks = 'UIKit'
 end

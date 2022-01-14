@@ -15,6 +15,7 @@
 		02CE3D65245EF19900E786F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CE3D63245EF19900E786F8 /* LaunchScreen.storyboard */; };
 		3BD5974AD22A1E555E8FBF93 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18D8FE66FC0E27DDB20C53E /* Pods_Example.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		813C502E2791CB0800902E5E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813C502D2791CB0800902E5E /* Package.swift */; };
 		CBE417F370B6DE8A27E191C0 /* Pods_swiftVibrant_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA06F1DE6F9C077DEB3AF1E /* Pods_swiftVibrant_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,13 +28,10 @@
 		02CE3D61245EF19900E786F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02CE3D64245EF19900E786F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02CE3D66245EF19900E786F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04B2C6316ED3FEA12D2E413E /* Pods-swiftVibrant_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftVibrant_Tests.release.xcconfig"; path = "Target Support Files/Pods-swiftVibrant_Tests/Pods-swiftVibrant_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		04DDE9579463834E92864267 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1BF125B0EC659770D6757116 /* Pods-swiftVibrant_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftVibrant_Tests.debug.xcconfig"; path = "Target Support Files/Pods-swiftVibrant_Tests/Pods-swiftVibrant_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* swiftVibrant_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftVibrant_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		631AEB3044C059FA9826ECDF /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		813C502D2791CB0800902E5E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C12DA4ED3ADB9413945322DE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D77DF502E212097128D250B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DCA06F1DE6F9C077DEB3AF1E /* Pods_swiftVibrant_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftVibrant_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,11 +85,11 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				813C502D2791CB0800902E5E /* Package.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				02CE3D57245EF19700E786F8 /* Example */,
 				607FACD11AFB9204008FA782 /* Products */,
-				694AD21C6B21895C373D1D37 /* Pods */,
 				582F4894A1C95F6C9057F557 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -130,17 +128,6 @@
 				C12DA4ED3ADB9413945322DE /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		694AD21C6B21895C373D1D37 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1BF125B0EC659770D6757116 /* Pods-swiftVibrant_Tests.debug.xcconfig */,
-				04B2C6316ED3FEA12D2E413E /* Pods-swiftVibrant_Tests.release.xcconfig */,
-				04DDE9579463834E92864267 /* Pods-Example.debug.xcconfig */,
-				631AEB3044C059FA9826ECDF /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813C502E2791CB0800902E5E /* Package.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +360,6 @@
 /* Begin XCBuildConfiguration section */
 		02CE3D68245EF19900E786F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04DDE9579463834E92864267 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -402,7 +389,6 @@
 		};
 		02CE3D69245EF19900E786F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 631AEB3044C059FA9826ECDF /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -528,7 +514,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BF125B0EC659770D6757116 /* Pods-swiftVibrant_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = GDNLAH489Z;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,7 +535,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B2C6316ED3FEA12D2E413E /* Pods-swiftVibrant_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = GDNLAH489Z;
 				FRAMEWORK_SEARCH_PATHS = (
