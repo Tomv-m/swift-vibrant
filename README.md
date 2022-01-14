@@ -1,8 +1,8 @@
 # swift-vibrant
 
-Generate a color palette from a UIImage. 
+Generate a color palette from a UIImage.
 
-Other color palette generators will only give you a list of the dominant colors in an image. Vibrant does much more. 
+Other color palette generators will only give you a list of the dominant colors in an image. Vibrant does much more.
 
 Now I know what you're thinking: "But Bryce, colors from an image! That's what I want! That's why I'm on your repository in the first place!"
 
@@ -36,7 +36,7 @@ import swiftVibrant
 let image = UIImage(named: "name_of_image")
 
 // Calling from a background thread
-Vibrant.from(image).getPalette({ palette in 
+Vibrant.from(image).getPalette({ palette in
     // do stuff with your palette
 })
 // Calling in main thread
@@ -45,7 +45,7 @@ Vibrant.from(image).getPalette()
 
 // Using constructor
 let v = Vibrant(image, Vibrant.Options)
-v.getPalette({ palette in 
+v.getPalette({ palette in
     // do stuff with your palette
 })
 ```
@@ -87,7 +87,7 @@ Field          | Default                         | Description
 `quantizer`    | `Quantizer.defaultQuantizer` | A `Quantizer` function
 `generator`    | `Generator.defaultGenerator` | An `Generator` function
 `maxDimension` | `nil`                   | The max size of the image's longer side used in downsampling stage. This field will override `quality`.
-`filters`      | `[]`                            | An array of `Filter` 
+`filters`      | `[]`                            | An array of `Filter`
 
 ##### `quantizer`
 
@@ -118,7 +118,7 @@ public class Filter {
 
 Name | Description
 ---- | -----------------
-`cb` | callback function. 
+`cb` | callback function.
 
 ### `Vibrant.Builder`
 Helper class for change configurations and create a `Vibrant` instance. Methods of a `Builder` instance can be chained like:
@@ -198,7 +198,7 @@ public typealias HSL = (r: Double, g: Double, b: Double)
 public typealias HSL = (r: Double, g: Double, b: Double)
 ```
 
-#### 
+####
 
 #### `constructor(rgb: RGB, population: Int)`
 
